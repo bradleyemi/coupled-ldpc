@@ -2,7 +2,7 @@ import numpy as np
 import random
 import cPickle as pickle
 
-M = 1024
+M = 512
 VAR_OUTDEG = 3
 CHECK_OUTDEG = 6
 N_BLOCKS = 64
@@ -52,5 +52,5 @@ def generate_coupled_h(M, var_outdeg, check_outdeg, n_blocks, coupling_width):
 
 H = generate_coupled_h(M, VAR_OUTDEG, CHECK_OUTDEG, N_BLOCKS, COUPLING_WIDTH)
 print H.shape, H.sum()
-np.save("coupled_h_large.npy", H)
+np.save("coupled_h_medium.npy", H)
             
